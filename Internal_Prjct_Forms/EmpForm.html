@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Add Employee Details</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+        integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+        crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+        integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="header">
+        <img class="header-logo" src="./Assets/logo.png" />
+        <div class="d-flex align-items-center pr-2">
+            <a class="pr-3" href="#">Change Password?</a>
+            <a class="" href="#">Logout
+                <i class="fas fa-sign-out-alt"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Wrapper -->
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3 class="sidebar-txt">Welcome Admin!</h3>
+                <strong>WA</strong>
+            </div>
+            <!-- Menu -->
+            <ul class="list-unstyled components">
+                <!-- Dashboard -->
+                <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">
+                        <i class="fas fa-home"></i>
+                        Dashboard
+                    </a>
+                </li>
+                <!-- Assets -->
+                <li>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fas fa-cog"></i>
+                        Assets
+                    </a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">List</a>
+                        </li>
+                        <li>
+                            <a href="#">Add</a>
+                        </li>
+                        <li>
+                            <a href="#">Assigned Assets</a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- Admin -->
+                <li>
+                    <a href="#">
+                        <i class="fas fa-user-cog"></i>
+                        Admin
+                    </a>
+                </li>
+                <!-- Employee -->
+                <li>
+                    <a href="#">
+                        <i class="fas fa-users"></i>
+                        Employee
+                    </a>
+                </li>
+                <!-- Reimbursement -->
+                <li>
+                    <a href="#">
+                        <i class="fas fa-wallet"></i>
+                        Reimbursement
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Sidebar Collapse Button -->
+        <div class="collapse-btn">
+            <button type="button" id="sidebarCollapse" class="btn toggle-btn">
+                <i class="fas fa-align-left"></i>
+            </button>
+        </div>
+        <!-- Page Content  -->
+        <div id="content">
+            <nav class="navbar pl-0 navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid pl-1">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <!-- Button to Open the Modal -->
+                        <button type="button" class="btn add-btn" data-toggle="modal" data-target="#myModal">
+                            Add Employee
+                        </button>
+                        <!-- Input  file to import employee details -->
+                        <input class="inputfile" type="file" />
+                        <!-- Import button  -->
+                        <button class="import-btn" type="submit">Import</button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!--  Modal- Submit form -->
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header modal-heading">
+                        <p class="form-title ml-auto">Add New Employee</p>
+                        <button type="button" class="close close-btn" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body p-3 ">
+                        <div class="d-flex flex-row">
+                            <!-- Input details first block -->
+                            <div class="p-2">
+                                <!-- Employee ID -->
+                                <div class="d-flex flex-column mb-2">
+                                    <label class="txt-label">Employee ID <span class="token">*</span>:</label>
+                                    <input class="txt-input" name="empid" type="text" value="" />
+                                </div>
+                                <!-- Name -->
+                                <div class="d-flex flex-column mb-2">
+                                    <label class="txt-label">Name <span class="token">*</span>:</label>
+                                    <input class="txt-input" name="name" type="text" value="" />
+                                </div>
+                                <!-- Designation -->
+                                <div class="d-flex flex-column mb-2">
+                                    <label class="txt-label">Designation <span class="token">*</span>:</label>
+                                    <input class="txt-input" name="designation" type="text" value="" />
+                                </div>
+                                <!-- Contact Number -->
+                                <div class="d-flex flex-column mb-2">
+                                    <label class="txt-label">Contact Number <span class="token">*</span>:</label>
+                                    <input class="txt-input" name="contactno" type="text" value="" />
+                                </div>
+                                <!-- Email -->
+                                <div class="d-flex flex-column mb-2">
+                                    <label class="txt-label">Email <span class="token">*</span>:</label>
+                                    <input class="txt-input" name="email" type="text" value="" />
+                                </div>
+                            </div>
+
+                            <!-- Input details second block -->
+                            <div class="p-2">
+                                <!-- Date of birth -->
+                                <div class="d-flex flex-column mb-2">
+                                    <label class="txt-label">DOB <span class="token">*</span>:</label>
+                                    <input class="txt-input" name="dob" type="date" value="" />
+                                </div>
+                                <!-- Blood group -->
+                                <div class="d-flex flex-column mb-2">
+                                    <label class="txt-label">Blood Group <span class="token">*</span>:</label>
+                                    <select class="txt-input" name="b-grp">
+                                        <option value="A+ve">A+ve</option>
+                                        <option value="A-ve">A-ve</option>
+                                        <option value="B+ve">B+ve</option>
+                                        <option value="B-ve">B-ve</option>
+                                        <option value="AB+ve">AB+ve</option>
+                                        <option value="AB-ve">AB-ve</option>
+                                        <option value="O+ve">O+ve</option>
+                                        <option value="O-ve">O-ve</option>
+                                    </select>
+                                </div>
+                                <!-- Healthcard Number -->
+                                <div class="d-flex flex-column mb-2">
+                                    <label class="txt-label">Healthcard Number <span class="token">*</span>:</label>
+                                    <input class="txt-input" name="hcard" type="text" value="" />
+                                </div>
+                                <!-- Emergency Contact Person -->
+                                <div class="d-flex flex-column mb-2">
+                                    <label class="txt-label">Emergency Contact Person <span
+                                            class="token">*</span>:</label>
+                                    <input class="txt-input" name="econtactperson" type="text" value="" />
+                                </div>
+                                <!-- Emergency Contact Number -->
+                                <div class="d-flex flex-column mb-2">
+                                    <label class="txt-label">Emergency Contact Number <span
+                                            class="token">*</span>:</label>
+                                    <input class="txt-input" name="econtactno" type="text" value="" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Modal footer -->
+                        <div class="modal-footer submit-wrapper">
+                            <button type="button" class="btn submit-btn" data-dismiss="modal">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- jQuery CDN - Slim version (=without AJAX) -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <!-- Popper.JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+            integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+            crossorigin="anonymous"></script>
+        <!-- Bootstrap JS -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+            integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+            crossorigin="anonymous"></script>
+
+        <!-- Script for sidebar -->
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('#sidebarCollapse').on('click', function () {
+                    $('#sidebar').toggleClass('active');
+                });
+            });
+        </script>
+</body>
+
+</html>
