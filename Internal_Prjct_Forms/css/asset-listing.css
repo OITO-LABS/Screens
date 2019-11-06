@@ -1,0 +1,92 @@
+.header-bar{
+    margin:20px;
+    height: 36px;
+}
+.button{
+    margin:0px 10px;
+    padding: 0px 5px;
+    height: 35px;
+}
+.search-box{
+
+    border: 1px solid rgb(150, 141, 141);
+    border-radius: 20px;
+    width: 250px;
+}
+.search-button{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background:#007bff;
+    color:#fff;
+    border: 1px solid rgb(150, 141, 141);
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline:none;
+}
+th{
+    background: #1C2A48;
+    color: #fff;
+}
+.name-space{
+    font-weight: bold;
+    color: rgb(14, 14, 231);
+}
+.has-search .form-control {
+    padding-left: 40px;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+.table td{
+    padding: 5px;
+}
+.btn.action{
+    padding: 0px 5px;
+    margin: 0px 5px;
+}
+table{
+    border: 1px solid #dee2e6;
+}
+.pagination{
+    display: inline-flex;
+    border: 1px solid #fff;
+}
+.pagination li button{
+padding: 5px 10px;
+border-radius: 5px
+}
+.pagination li{
+    border: 1px solid #fff;
+   
+}
+.pagination li.pagination-active{
+    color: #fff;
+    background:#c3d4e2;
+}
+.pagination-button{
+border:none; 
+background: #fff;
+    color: blue;
+    
+}
+.pagination-button:hover{
+    background-color: #eee;
+    border: 1px solid #007bff;
+    
+}
+.active-button{
+    background: #007bff;
+    color: #fff;
+}

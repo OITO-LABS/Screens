@@ -1,0 +1,48 @@
+.heading-row{
+    background: #0a0aa0;
+    color: white;
+    justify-content: center;
+}
+.field {
+    color: #6c757d;
+    background: #fbf3f3;
+}
+.value {
+    /* font-size: 20px; */
+    /* font-weight: bold; */
+    background: #fbf3f3;
+    color: #b4323e;
+}
+/* .asset-list {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.asset-list ul  {
+    border: 1px solid #000;
+    padding-left: 0px;
+}
+.personal-assets .asset-list   {
+    padding:0px 0px;
+}
+.asset-list ul li:hover {
+    background:  #b4323e;
+    color:#fff;
+} */
+.personal-assets .asset{
+    /* padding: 30px 40px; */
+    padding: 0px;;
+}
+.asset-acive{
+    background:  #b4323e;
+    color: #fff;
+}
+thead{
+    color: #fff;
+    background: #b4323e;
+}
+.single-asset.table td{
+    padding: 10px 10px;
+}
+.single-asset.table thead tr td{
+border:1px solid #000;
+}
