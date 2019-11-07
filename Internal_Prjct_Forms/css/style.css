@@ -230,14 +230,14 @@ ul ul a {
 ----------------------------------------------------- */
 
 .collapse-btn {
-    margin-top: 1.5rem;
-    height: 100%;
-    margin-left: 1%;
+  margin-top: 1.5rem;
+  height: 100%;
+  margin-left: 1%;
 }
 
 #content {
   width: 100%;
-  padding: 10px 20px 20px  10px;
+  padding: 10px 20px 20px 10px;
   min-height: 100vh;
   transition: all 0.3s;
 }
@@ -267,7 +267,7 @@ ul ul a {
 }
 
 .txt-label {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .token {
@@ -302,6 +302,54 @@ ul ul a {
   background-color: #c73e3e;
 }
 
+/* Dashboard */
+
+.box-content {
+  border: 1px solid #dacfcf;
+  padding: 1rem;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #dae0e5;
+}
+
+.input-wrapper {
+  width: 25%;
+  margin-bottom: 2rem;
+}
+
+.image-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 3%;
+  border: 1px solid #dee2e6;
+}
+
+.greeting {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+  display: flex;
+  justify-content: center;
+}
+
+.image-subwrapper {
+  border-radius: 50%;
+  width: 15%;
+  height: 9rem;
+}
+
+.readonly-input {
+  border: 0;
+  background-color: #dae0e5;
+  border-bottom: 1px solid #acb2b8;
+  border-radius: 0;
+  padding-left: 0;
+}
+
+.readonly-label {
+  font-weight: bold;
+  color: #444142;
+}
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
