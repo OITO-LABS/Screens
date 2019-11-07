@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Reimbursement Details</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="container mt-3">
+            <div class="row mt-5">
+                <div class="d-flex mb-4 flex-column mx-auto">
+                    <div>
+                        <label class="txt-label">Employee Id</label>
+                        <input name="empid" class="txt-input" type="text" value="" />
+                    </div>
+                    <div>
+                        <label class="txt-label">Date</label>
+                        <input name="curdate" class="txt-input" type="date" value="" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="row personal-assets">
+                <table class="table table-bordered single-asset">
+                    <thead>
+                        <tr>
+                            <td>Date</td>
+                            <td>Description</td>
+                            <td>Category</td>
+                            <td>Bill Number</td>
+                            <td>Cost</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input class="row-input" type="date" name="billdate" value="" /></td>
+                            <td><input class="row-input" type="text" name="descp" value="Asdadfs" /></td>
+                            <td><input class="row-input" type="text" name="category" value="Food" /></td>
+                            <td><input class="row-input" type="text" name="billno" value="2313423" /></td>
+                            <td><input class="row-input" type="number" name="cost" value="234" /></td>
+                        </tr>
+                        <tr>
+                            <td><input class="row-input" type="date" name="billdate" value="" /></td>
+                            <td><input class="row-input" type="text" name="descp" value="Asdadfs" /></td>
+                            <td><input class="row-input" type="text" name="category" value="Food" /></td>
+                            <td><input class="row-input" type="text" name="billno" value="2313423" /></td>
+                            <td><input class="row-input" type="number" name="cost" value="234" /></td>
+                        </tr>
+                        <tr>
+                            <td><input class="row-input" type="date" name="billdate" value="" /></td>
+                            <td><input class="row-input" type="text" name="descp" value="" /></td>
+                            <td><input class="row-input" type="text" name="category" value="" /></td>
+                            <td><input class="row-input" type="text" name="billno" value="" /></td>
+                            <td><input class="row-input" type="number" name="cost" value="" /></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
