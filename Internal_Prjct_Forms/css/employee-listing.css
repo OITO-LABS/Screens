@@ -184,3 +184,15 @@ background: #fff;
     background: #007bff;
     color: #fff;
 }
+
+
+
+/* ***************date bar******************** */
+
+.date-input{
+    border-radius: 5px;
+    border: 1px solid #000;
+}
+.date-header{
+    margin-top: 20px;
+}

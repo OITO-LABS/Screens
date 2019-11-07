@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/employee-listing.css">
+    <title>Reimbursement listing</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row date-header">
+                <div class="ml-auto">
+                    <label for="start">From date:</label>
+                    <input type="date" id="start" name="trip-start" value="2019-01-01" class="date-input">
+                    <label for="start">To date:</label>
+                    <input type="date" id="start" name="trip-start" value="2019-01-01"class="date-input">
+                </div>
+            </div>
+            <div class="row employee-listing">
+                <table class="table ">
+                    <thead>
+                        <tr>
+                            <th>Sl no</th>
+                            <th>bill Date</th>
+                            <th>Bill number</th>
+                            <th>description</th>
+                            <th>Category</th>
+                            <th>Entered by</th>
+                            <th>cost</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>12-12-2019</td>
+                            <td>bill001</td>
+                            <td>food</td>
+                            <td>category1</td>
+                            <td>abhishek</td>
+                            <td>
+                                1200
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>03-03-2019</td>
+                            <td>bill002</td>
+                            <td>travel</td>
+                            <td>category2</td>
+                            <td>arun</td>
+                            <td>2330
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>02-02-2019</td>
+                            <td>bill006</td>
+                            <td>stationary</td>
+                            <td>category4</td>
+                            <td>gayatri</td>
+                            <td>4000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="row ">
+                <div class="col-md-12 ">
+                    <nav class="text-center">
+                        <ul class=" pagination">
+                            <li><button class="pagination-button"><i class="fa fa-chevron-left"
+                                        aria-hidden="true"></i></button></li>
+                            <li class="pagination-active"><button class="pagination-button active-button">1</button>
+                            </li>
+                            <li><button class="pagination-button">2</button></li>
+                            <li><button class="pagination-button">3</button></li>
+                            <li><button class="pagination-button">4</button></li>
+                            <li><button class="pagination-button">5</button></li>
+                            <li><button class="pagination-button">6</button></li>
+                            <li><button class="pagination-button">7</button></li>
+                            <li><button class="pagination-button">8</button></li>
+                            <li><button class="pagination-button"><i class="fa fa-chevron-right"
+                                        aria-hidden="true"></i></button></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
