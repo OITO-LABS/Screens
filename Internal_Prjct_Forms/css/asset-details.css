@@ -46,3 +46,15 @@ thead{
 .single-asset.table thead tr td{
 border:1px solid #000;
 }
+
+
+thead{
+    color: #fff;
+    background: #b4323e;
+}
+.single-asset.table td{
+    padding: 10px 10px;
+}
+.single-asset.table thead tr td{
+border:1px solid #000;
+}
