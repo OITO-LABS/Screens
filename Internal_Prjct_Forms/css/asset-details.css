@@ -58,3 +58,7 @@ thead{
 .single-asset.table thead tr td{
 border:1px solid #000;
 }
+
+.bold{
+    font-weight: bold;
+}
