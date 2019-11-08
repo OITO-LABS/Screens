@@ -278,8 +278,13 @@ ul ul a {
   border-radius: 0.5rem;
   border-style: groove;
   border: 1px solid #b6c5d1;
-  padding: 0.5rem 1rem;
+  padding: 0.25rem 1rem;
   width: 100%;
+  outline: none !important;
+}
+
+.txt-input:hover {
+  border-color: rgb(226, 224, 224);
 }
 
 .submit-wrapper {
@@ -376,16 +381,17 @@ thead{
   background: #b4323e;
 }
 
-.single-asset.table td{
-  padding: 10px 10px;
-}
-
 .single-asset.table thead tr td{
-border:1px solid #000;
+  border:1px solid #000;
 }
 
 .row-input {
   border: 0;
+}
+
+.input-style td {
+  border-top: none !important;
+  padding: 0.5rem !important;
 }
 
 
