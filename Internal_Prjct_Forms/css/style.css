@@ -67,7 +67,9 @@ span {
   transform: translateY(-3px);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
   background-color: #222f5e;
+  color: rgb(207, 58, 58);
 }
+
 .import-btn {
   border-radius: 0.25rem;
   border: 1px solid #182141;
@@ -80,6 +82,7 @@ span {
   transform: translateY(-3px);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
   background-color: #222f5e;
+  color: #b4323e;
 }
 
 /* ---------------------------------------------------
@@ -281,6 +284,7 @@ ul ul a {
   padding: 0.25rem 1rem;
   width: 100%;
   outline: none !important;
+  display: flex;
 }
 
 .txt-input:hover {
