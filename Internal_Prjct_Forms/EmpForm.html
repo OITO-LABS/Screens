@@ -110,6 +110,7 @@
                 <i class="fas fa-align-left"></i>
             </button>
         </div>
+
         <!-- Page Content  -->
         <div id="content">
             <nav class="navbar pl-0 navbar-expand-lg navbar-light bg-light">
@@ -127,7 +128,7 @@
                 </div>
             </nav>
         </div>
-
+        
         <!--  Modal- Submit form -->
         <div class="modal fade" id="myModal">
             <div class="modal-dialog">
@@ -219,16 +220,27 @@
                     </div>
                 </div>
             </div>
+        </div> 
+    </div>
+    
+     <!-- Footer -->
+     <div class="header">
+        <img class="header-logo" src="./Assets/logo.png" />
+        <div class="d-flex align-items-center pr-2">
+            <a class="pr-3" href="#">Change Password?</a>
+            <a class="" href="#">Logout
+                <i class="fas fa-sign-out-alt"></i>
+            </a>
         </div>
-
-        <!-- Script for sidebar -->
-        <script type="text/javascript">
-            $(document).ready(function () {
-                $('#sidebarCollapse').on('click', function () {
-                    $('#sidebar').toggleClass('active');
-                });
+    </div>
+    <!-- Script for sidebar -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
             });
-        </script>
+        });
+    </script>
 </body>
 
 </html>
